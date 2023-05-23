@@ -145,7 +145,7 @@ class Board:
 
         row = begin
         while row != end:
-            if col > 7 or col < 0:
+            if col > 7 or col < 0 or row > 7 or row < 0:
                 break
 
             if self.board[row][col] != 0:
